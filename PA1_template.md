@@ -77,7 +77,7 @@ ggplot(stepsByDay, aes(x=sum)) + geom_histogram(aes(fill=..count..), binwidth=10
     scale_x_continuous(name="Total number of steps")  
 ```
 
-![](figure/histogram_na-1.png) 
+![](Figure/histogram_na-1.png) 
 
 ## What is the average daily activity pattern?
 
@@ -117,7 +117,7 @@ Then make a time series plot of the 5-minute interval (x-axis) and the average n
     geom_text(aes(label=ifelse(interval == max$interval,max$interval,'')),hjust=0,just=0)
 ```
 
-![](figure/time_series-1.png) 
+![](Figure/time_series-1.png) 
 
 # Imputing missing values
 
@@ -214,7 +214,7 @@ ggplot(stepsByDay_no_na, aes(x=sum)) + geom_histogram(aes(fill=..count..), binwi
     scale_x_continuous(name="Total number of steps")  
 ```
 
-![](figure/histogram_full-1.png) 
+![](Figure/histogram_full-1.png) 
 
 Do these values differ from the estimates from the first part of the assignment? 
 Here is the calculated mean and median for the dataset with missing values:
@@ -312,4 +312,4 @@ ggplot(averageStepsbyIntervalWeek_no_na, aes(interval, average)) + geom_line() +
     ggtitle("Average number of steps taken per interval across all days")
 ```
 
-![](figure/panel-1.png) 
+![](Figure/panel-1.png) 
